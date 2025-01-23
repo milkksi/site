@@ -2,16 +2,16 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    height: 100vh; /* Устанавливаем высоту body на 100% высоты окна */
-    display: flex; /* Используем Flexbox */
-    justify-content: center; /* Центрируем по горизонтали */
-    align-items: center; /* Центрируем по вертикали */
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 .container {
     max-width: 400px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для читаемости */
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон */
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
@@ -82,10 +82,10 @@ a:hover {
 }
 
 .gif-container img {
-    width: 100%; /* Адаптивная ширина */
-    height: auto; /* Автоматическая высота для сохранения пропорций */
-    max-width: 500px; /* Максимальная ширина */
-    margin: 0 auto; /* Выравнивание по центру */
+    width: 100%; 
+    height: auto;
+    max-width: 500px; 
+    margin: 0 auto; 
 }
 
 .background {
@@ -94,32 +94,32 @@ a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('giphy.gif'); /* Укажите путь к вашему GIF */
+    background-image: url('giphy.gif'); 
     background-size: cover;
     background-position: center;
-    filter: blur(8px); /* Размытие фона */
-    z-index: -1; /* Убедитесь, что фон находится позади других элементов */
+    filter: blur(8px); 
+    z-index: -1; 
 }
 
 /* Медиа-запрос для мобильных устройств (экраны до 768px) */
 @media only screen and (max-width: 768px) {
     .container {
-        max-width: 90%; /* Ширина контейнера на мобильных */
-        padding: 10px; /* Поля контейнера на мобильных */
+        max-width: 90%; 
+        padding: 10px; 
     }
     .gif-container img {
-        max-width: 300px; /* Максимальная ширина изображения на мобильных */
+        max-width: 300px; 
     }
 }
 
 /* Медиа-запрос для планшетов (экраны от 769px до 992px) */
 @media only screen and (min-width: 769px) and (max-width: 992px) {
     .container {
-        max-width: 80%; /* Ширина контейнера на планшетах */
-        padding: 15px; /* Поля контейнера на планшетах */
+        max-width: 80%; 
+        padding: 15px; 
     }
     .gif-container img {
-        max-width: 400px; /* Максимальная ширина изображения на планшетах */
+        max-width: 400px; 
     }
 }
 
