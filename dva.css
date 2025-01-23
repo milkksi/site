@@ -19,17 +19,17 @@ header .container {
 }
 
 header .logo {
-    display: flex; /* Используем flex для логотипа и GIF */
-    align-items: center; /* Вертикальное выравнивание по центру */
+    display: flex; 
+    align-items: center; 
     font-size: 24px;
-    font-weight: 600; /* Можно использовать Rubik с более жирным начертанием для логотипа */
+    font-weight: 600; 
 }
 
 
 .gif-container img {
-    width: 80px; /* Установите желаемую ширину для GIF */
-    height: auto; /* Автоматическая высота для сохранения пропорций */
-    margin-left: 10px; /* Отступ слева от GIF */
+    width: 80px; 
+    height: auto; 
+    margin-left: 10px; 
 }
 
 header nav ul {
@@ -161,8 +161,8 @@ footer nav ul li a {
 }
 
 h2 {
-    font-size: 25px; /* Уменьшаем размер шрифта заголовка "Любимые игры" */
-    margin-bottom: 10px; /* Добавляем отступ снизу для лучшего расположения */
+    font-size: 25px; 
+    margin-bottom: 10px; 
 }
 
 
@@ -180,25 +180,25 @@ button {
 /* Стили для сетки игр */
 .game-grid {
     display: flex;
-    flex-wrap: wrap; /* Позволяет элементам переноситься на следующую строку */
-    justify-content: center; /* Центрирует содержимое по горизонтали */
-    gap: 20px; /* Промежутки между элементами */
-    margin-top: 20px; /* Отступ сверху для сетки игр */
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+    margin-top: 20px; 
 }
 
 .game-icon {
-    position: relative; /* Позволяет позиционировать дочерние элементы */
-    width: 170px; /* Ширина иконки игры */
-    height: 170px; /* Высота иконки игры */
-    overflow: hidden; /* Скрывает часть изображения, выходящую за пределы */
-    border-radius: 8px; /* Закругление углов */
+    position: relative; 
+    width: 170px; 
+    height: 170px; 
+    overflow: hidden; 
+    border-radius: 8px; 
     cursor: pointer; /* Указатель при наведении */
 }
 
 .game-icon img {
     width: 100%;
-    height: 100%; /* Установим высоту на 100% родителя, чтобы сохранить размер */
-    object-fit: cover; /* Обеспечивает сохранение пропорций изображения */
+    height: 100%; 
+    object-fit: cover; 
     transition: opacity 0.3s; /* Плавный переход для эффекта затемнения */
 }
 
@@ -208,12 +208,12 @@ button {
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex; /* Используем flex для центрирования текста */
-    flex-direction: column; /* Вертикальное расположение текста */
-    align-items: center; /* Центрируем по горизонтали */
-    justify-content: center; /* Центрируем по вертикали */
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
     background-color: rgba(0, 0, 0, 0.6); /* Полупрозрачный черный фон */
-    color: white; /* Цвет текста */
+    color: white; 
     opacity: 0; /* Изначально скрываем текст */
     transition: opacity 0.3s; /* Плавный переход для появления текста */
 }
@@ -227,13 +227,13 @@ button {
 }
 
 .game-info h3 {
-    font-size: 16px; /* Уменьшите размер шрифта для названия игры */
-    margin: 0; /* Убираем отступы */
+    font-size: 16px; 
+    margin: 0; 
 }
 
 .game-info p {
-    font-size: 14px; /* Уменьшите размер шрифта для количества часов */
-    margin: 0; /* Убираем отступы */
+    font-size: 14px; 
+    margin: 0; 
 }
 
 
@@ -243,7 +243,7 @@ button {
     text-align: center;
     padding: 80px 20px;
     margin: 20px auto;
-    border: 5px solid #60eb84; /* Цвет и толщина рамки */
+    border: 5px solid #60eb84;
     border-radius: 12px;
     display: block;
     max-width: 800px;
@@ -271,8 +271,30 @@ button {
     text-align: center;
     padding: 80px 20px;
     margin: 20px auto;
-    border: 5px solid #60eb84; /* Цвет и толщина рамки */
+    border: 5px solid #60eb84; 
     border-radius: 12px;
     display: block;
     max-width: 1300px;
+}
+
+/* Медиа-запрос для мобильных устройств (экраны до 768px) */
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 90%; 
+        padding: 10px; 
+    }
+    .gif-container img {
+        max-width: 300px; 
+    }
+}
+
+/* Медиа-запрос для планшетов (экраны от 769px до 992px) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .container {
+        max-width: 80%; 
+        padding: 15px; 
+    }
+    .gif-container img {
+        max-width: 400px; 
+    }
 }
