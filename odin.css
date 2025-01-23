@@ -19,17 +19,17 @@ header .container {
 }
 
 header .logo {
-    display: flex; /* Используем flex для логотипа и GIF */
-    align-items: center; /* Вертикальное выравнивание по центру */
+    display: flex; 
+    align-items: center; 
     font-size: 24px;
-    font-weight: 600; /* Можно использовать Rubik с более жирным начертанием для логотипа */
+    font-weight: 600; 
 }
 
 
 .gif-container img {
-    width: 80px; /* Установите желаемую ширину для GIF */
-    height: auto; /* Автоматическая высота для сохранения пропорций */
-    margin-left: 10px; /* Отступ слева от GIF */
+    width: 80px; 
+    height: auto; 
+    margin-left: 10px; 
 }
 
 header nav ul {
@@ -85,10 +85,10 @@ h1 {
 
 /* Стили для сетки игр */
 .game-grid {
-    display: flex; /* Используем Flexbox для выравнивания */
-    justify-content: center; /* Центрируем содержимое по горизонтали */
-    gap: 20px; /* Промежутки между элементами */
-    margin: 20px 0; /* Отступы сверху и снизу */
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    margin: 20px 0; 
 }
 
 .hero {
@@ -105,23 +105,23 @@ h1 {
     padding: 80px 20px;
 }
 
-/* Установим фиксированный размер для иконок игр */
+/* фиксированный размер для иконок игр */
 .game-icon {
     position: relative;
     cursor: pointer;
     overflow: hidden;
-    width: 200px;  /* Ширина иконки */
-    height: 200px; /* Высота иконки */
-    display: flex; /* Добавлено для вертикального выравнивания */
-    flex-direction: column; /* Вертикальная компоновка */
-    align-items: center; /* Центрирование по горизонтали */
+    width: 200px;  
+    height: 200px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
 }
 
 .game-icon img {
     width: 100%;
-    height: 100%; /* Установим высоту на 100% родителя, чтобы сохранить размер */
+    height: 100%; 
     border-radius: 8px;
-    object-fit: cover; /* Обеспечит сохранение пропорций изображения */
+    object-fit: cover; 
 }
 
 .overlay {
@@ -147,11 +147,11 @@ h1 {
 /* Стили для информации об игре */
 .game-info {
     display: none; /* Скрыто по умолчанию */
-    width: 180px; /* Фиксированная ширина для информации */
-    padding: 10px; /* Отступы для информации об игре */
-    border-radius: 5px; /* Закругление углов для информации */
-    margin-top: 10px; /* Отступ сверху для разделения с иконкой */
-    z-index: 1000; /* Обеспечивает отображение поверх других элементов */
+    width: 180px; 
+    padding: 10px; 
+    border-radius: 5px; 
+    margin-top: 10px; 
+    z-index: 1000; 
 }
 
 .game-info h2 {
@@ -177,11 +177,11 @@ h1 {
     bottom: 0;
     background: rgba(0, 0, 0, 0.5);
     display: none; /* Скрыто по умолчанию */
-    z-index: 999; /* Под всплывающим окном */
+    z-index: 999; 
 }
 
 .game-info.active::before {
-    display: block; /* Показываем затемнение при открытом окне */
+    display: block; 
 }
 
 .overlay {
@@ -201,28 +201,28 @@ h1 {
 }
 
 details[open] .game-info {
-    display: block; /* Показываем информацию об игре, когда details открыто */
+    display: block; 
 }
 
 /* Медиа-запрос для мобильных устройств (экраны до 768px) */
 @media only screen and (max-width: 768px) {
     .container {
-        max-width: 90%; /* Ширина контейнера на мобильных */
-        padding: 10px; /* Поля контейнера на мобильных */
+        max-width: 90%; 
+        padding: 10px; 
     }
     .gif-container img {
-        max-width: 300px; /* Максимальная ширина изображения на мобильных */
+        max-width: 300px; 
     }
 }
 
 /* Медиа-запрос для планшетов (экраны от 769px до 992px) */
 @media only screen and (min-width: 769px) and (max-width: 992px) {
     .container {
-        max-width: 80%; /* Ширина контейнера на планшетах */
-        padding: 15px; /* Поля контейнера на планшетах */
+        max-width: 80%; 
+        padding: 15px; 
     }
     .gif-container img {
-        max-width: 400px; /* Максимальная ширина изображения на планшетах */
+        max-width: 400px; 
     }
 }
 
