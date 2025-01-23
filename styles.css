@@ -1,0 +1,125 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Устанавливаем высоту body на 100% высоты окна */
+    display: flex; /* Используем Flexbox */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+}
+
+.container {
+    max-width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для читаемости */
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+h2 {
+    color: #444;
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    border-color: #3d3f41;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #60eb84;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #46ad62;
+}
+
+p {
+    text-align: center;
+    color: #666;
+}
+
+a {
+    color: #eb60c7;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.gif-container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gif-container img {
+    width: 100%; /* Адаптивная ширина */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    max-width: 500px; /* Максимальная ширина */
+    margin: 0 auto; /* Выравнивание по центру */
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('giphy.gif'); /* Укажите путь к вашему GIF */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px); /* Размытие фона */
+    z-index: -1; /* Убедитесь, что фон находится позади других элементов */
+}
+
+/* Медиа-запрос для мобильных устройств (экраны до 768px) */
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 90%; /* Ширина контейнера на мобильных */
+        padding: 10px; /* Поля контейнера на мобильных */
+    }
+    .gif-container img {
+        max-width: 300px; /* Максимальная ширина изображения на мобильных */
+    }
+}
+
+/* Медиа-запрос для планшетов (экраны от 769px до 992px) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .container {
+        max-width: 80%; /* Ширина контейнера на планшетах */
+        padding: 15px; /* Поля контейнера на планшетах */
+    }
+    .gif-container img {
+        max-width: 400px; /* Максимальная ширина изображения на планшетах */
+    }
+}
+
